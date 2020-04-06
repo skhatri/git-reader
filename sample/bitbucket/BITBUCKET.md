@@ -34,3 +34,14 @@ http://localhost:7990/rest/api/1.0/projects/TOOL/repos/git-reader/tags
 curl -s -H"Authorization: Bearer $GIT_READER" \
 http://localhost:7990/rest/api/1.0/projects/TOOL/repos/git-reader/branches
 ```
+
+#### List Files
+```
+curl -s -H"Authorization: Bearer $GIT_READER" \
+http://localhost:7990/rest/api/1.0/projects/TOOL/repos/git-reader/files/
+```
+#### Retrieve Raw File
+```
+curl -s -H"Authorization: Bearer $GIT_READER" \
+http://localhost:7990/rest/api/1.0/projects/TOOL/repos/git-reader/raw/.gitignore
+```
