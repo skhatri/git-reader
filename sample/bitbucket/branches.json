@@ -1,0 +1,24 @@
+{
+  "size": 2,
+  "limit": 25,
+  "isLastPage": true,
+  "values": [
+    {
+      "id": "refs/heads/bitbucket-requirement",
+      "displayId": "bitbucket-requirement",
+      "type": "BRANCH",
+      "latestCommit": "5f1c84c62e2aae1889c5fabd706f1369d2141a16",
+      "latestChangeset": "5f1c84c62e2aae1889c5fabd706f1369d2141a16",
+      "isDefault": false
+    },
+    {
+      "id": "refs/heads/master",
+      "displayId": "master",
+      "type": "BRANCH",
+      "latestCommit": "c2f56b31dd4832b3e7adba552ab68a8eee5631cc",
+      "latestChangeset": "c2f56b31dd4832b3e7adba552ab68a8eee5631cc",
+      "isDefault": true
+    }
+  ],
+  "start": 0
+}

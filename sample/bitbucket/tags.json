@@ -1,0 +1,24 @@
+{
+  "size": 2,
+  "limit": 25,
+  "isLastPage": true,
+  "values": [
+    {
+      "id": "refs/tags/0.2",
+      "displayId": "0.2",
+      "type": "TAG",
+      "latestCommit": "5f1c84c62e2aae1889c5fabd706f1369d2141a16",
+      "latestChangeset": "5f1c84c62e2aae1889c5fabd706f1369d2141a16",
+      "hash": "0d7624df5bdb7e9ed174302c80897358d475810f"
+    },
+    {
+      "id": "refs/tags/0.1",
+      "displayId": "0.1",
+      "type": "TAG",
+      "latestCommit": "5f1c84c62e2aae1889c5fabd706f1369d2141a16",
+      "latestChangeset": "5f1c84c62e2aae1889c5fabd706f1369d2141a16",
+      "hash": "f1ef7a41f7d3a64c4203f57cd94655a282172ba6"
+    }
+  ],
+  "start": 0
+}

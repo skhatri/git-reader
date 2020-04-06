@@ -1,0 +1,44 @@
+{
+  "slug": "git-reader",
+  "id": 2,
+  "name": "git-reader",
+  "description": "Git Reader",
+  "hierarchyId": "4b5c37a287f303714e49",
+  "scmId": "git",
+  "state": "AVAILABLE",
+  "statusMessage": "Available",
+  "forkable": true,
+  "project": {
+    "key": "TOOL",
+    "id": 2,
+    "name": "TOOLS",
+    "description": "Tools Project",
+    "public": false,
+    "type": "NORMAL",
+    "links": {
+      "self": [
+        {
+          "href": "http://localhost:7990/projects/TOOL"
+        }
+      ]
+    }
+  },
+  "public": false,
+  "links": {
+    "clone": [
+      {
+        "href": "http://localhost:7990/scm/tool/git-reader.git",
+        "name": "http"
+      },
+      {
+        "href": "ssh://git@localhost:7999/tool/git-reader.git",
+        "name": "ssh"
+      }
+    ],
+    "self": [
+      {
+        "href": "http://localhost:7990/projects/TOOL/repos/git-reader/browse"
+      }
+    ]
+  }
+}
