@@ -3,13 +3,12 @@ package controller
 import (
 	"github.com/skhatri/api-router-go/router"
 	"github.com/skhatri/api-router-go/router/model"
-	"github.com/skhatri/git-reader/gitapi/bitbucket"
+	"github.com/skhatri/git-reader/gitapi/factory"
 )
 
 //GetProjects - list git projects
 func GetProjects(_ *router.WebRequest) *model.Container {
-	bit := bitbucket.NewBitBucketClient()
-	list, err := bit.ListProjects()
+	list, err := factory.GetGitClient().ListProjects()
 	if err != nil {
 		return model.ErrorResponse(model.MessageItem{
 			Code:    "list-error",
@@ -32,8 +31,7 @@ func GetRepositories(web *router.WebRequest) *model.Container {
 			Message: "project name is required",
 		}, 500)
 	}
-	bit := bitbucket.NewBitBucketClient()
-	list, err := bit.ListRepositories(projectName)
+	list, err := factory.GetGitClient().ListRepositories(projectName)
 	if err != nil {
 		return model.ErrorResponse(model.MessageItem{
 			Code:    "list-repo-error",
@@ -57,8 +55,7 @@ func GetRepository(web *router.WebRequest) *model.Container {
 			Message: "project name and repository name are required",
 		}, 500)
 	}
-	bit := bitbucket.NewBitBucketClient()
-	item, err := bit.GetRepositoryDetail(projectName, name)
+	item, err := factory.GetGitClient().GetRepositoryDetail(projectName, name)
 	if err != nil {
 		return model.ErrorResponse(model.MessageItem{
 			Code:    "list-repo-error",
@@ -67,7 +64,6 @@ func GetRepository(web *router.WebRequest) *model.Container {
 	}
 	return model.Response(item)
 }
-
 
 //GetTags - list git tags inside a repository
 func GetTags(web *router.WebRequest) *model.Container {
@@ -79,8 +75,7 @@ func GetTags(web *router.WebRequest) *model.Container {
 			Message: "project name is required",
 		}, 500)
 	}
-	bit := bitbucket.NewBitBucketClient()
-	list, err := bit.ListTags(projectName, name)
+	list, err := factory.GetGitClient().ListTags(projectName, name)
 	if err != nil {
 		return model.ErrorResponse(model.MessageItem{
 			Code:    "list-tag-error",
@@ -94,7 +89,6 @@ func GetTags(web *router.WebRequest) *model.Container {
 	return model.ListResponse(data)
 }
 
-
 //GetBranches - list git branches inside a repository
 func GetBranches(web *router.WebRequest) *model.Container {
 	projectName := web.GetQueryParam("project")
@@ -105,8 +99,7 @@ func GetBranches(web *router.WebRequest) *model.Container {
 			Message: "project name is required",
 		}, 500)
 	}
-	bit := bitbucket.NewBitBucketClient()
-	list, err := bit.ListBranches(projectName, name)
+	list, err := factory.GetGitClient().ListBranches(projectName, name)
 	if err != nil {
 		return model.ErrorResponse(model.MessageItem{
 			Code:    "list-tag-error",
