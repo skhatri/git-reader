@@ -1,0 +1,220 @@
+{
+  "size": 1,
+  "limit": 25,
+  "isLastPage": true,
+  "values": [
+    {
+      "id": 2,
+      "version": 0,
+      "title": "Bitbucket requirement",
+      "description": "Merge Bitbucket Requirements",
+      "state": "OPEN",
+      "open": true,
+      "closed": false,
+      "createdDate": 1586136495986,
+      "updatedDate": 1586136495986,
+      "fromRef": {
+        "id": "refs/heads/bitbucket-requirement",
+        "displayId": "bitbucket-requirement",
+        "latestCommit": "5f1c84c62e2aae1889c5fabd706f1369d2141a16",
+        "repository": {
+          "slug": "git-reader",
+          "id": 2,
+          "name": "git-reader",
+          "description": "Git Reader",
+          "hierarchyId": "4b5c37a287f303714e49",
+          "scmId": "git",
+          "state": "AVAILABLE",
+          "statusMessage": "Available",
+          "forkable": true,
+          "project": {
+            "key": "TOOL",
+            "id": 2,
+            "name": "TOOLS",
+            "description": "Tools Project",
+            "public": false,
+            "type": "NORMAL",
+            "links": {
+              "self": [
+                {
+                  "href": "http://localhost:7990/projects/TOOL"
+                }
+              ]
+            }
+          },
+          "public": false,
+          "links": {
+            "clone": [
+              {
+                "href": "http://localhost:7990/scm/tool/git-reader.git",
+                "name": "http"
+              },
+              {
+                "href": "ssh://git@localhost:7999/tool/git-reader.git",
+                "name": "ssh"
+              }
+            ],
+            "self": [
+              {
+                "href": "http://localhost:7990/projects/TOOL/repos/git-reader/browse"
+              }
+            ]
+          }
+        }
+      },
+      "toRef": {
+        "id": "refs/heads/master",
+        "displayId": "master",
+        "latestCommit": "c2f56b31dd4832b3e7adba552ab68a8eee5631cc",
+        "repository": {
+          "slug": "git-reader",
+          "id": 2,
+          "name": "git-reader",
+          "description": "Git Reader",
+          "hierarchyId": "4b5c37a287f303714e49",
+          "scmId": "git",
+          "state": "AVAILABLE",
+          "statusMessage": "Available",
+          "forkable": true,
+          "project": {
+            "key": "TOOL",
+            "id": 2,
+            "name": "TOOLS",
+            "description": "Tools Project",
+            "public": false,
+            "type": "NORMAL",
+            "links": {
+              "self": [
+                {
+                  "href": "http://localhost:7990/projects/TOOL"
+                }
+              ]
+            }
+          },
+          "public": false,
+          "links": {
+            "clone": [
+              {
+                "href": "http://localhost:7990/scm/tool/git-reader.git",
+                "name": "http"
+              },
+              {
+                "href": "ssh://git@localhost:7999/tool/git-reader.git",
+                "name": "ssh"
+              }
+            ],
+            "self": [
+              {
+                "href": "http://localhost:7990/projects/TOOL/repos/git-reader/browse"
+              }
+            ]
+          }
+        }
+      },
+      "locked": false,
+      "author": {
+        "user": {
+          "name": "skhatri",
+          "emailAddress": "kc2005au@gmail.com",
+          "id": 4,
+          "displayName": "Suresh Khatri",
+          "active": true,
+          "slug": "skhatri",
+          "type": "NORMAL",
+          "links": {
+            "self": [
+              {
+                "href": "http://localhost:7990/users/skhatri"
+              }
+            ]
+          }
+        },
+        "role": "AUTHOR",
+        "approved": false,
+        "status": "UNAPPROVED"
+      },
+      "reviewers": [
+        {
+          "user": {
+            "name": "app1",
+            "emailAddress": "app.one@kc2005au.com",
+            "id": 5,
+            "displayName": "App One",
+            "active": true,
+            "slug": "app1",
+            "type": "NORMAL",
+            "links": {
+              "self": [
+                {
+                  "href": "http://localhost:7990/users/app1"
+                }
+              ]
+            }
+          },
+          "role": "REVIEWER",
+          "approved": false,
+          "status": "UNAPPROVED"
+        },
+        {
+          "user": {
+            "name": "user1",
+            "emailAddress": "user.one@kc2005au.com",
+            "id": 2,
+            "displayName": "User One",
+            "active": true,
+            "slug": "user1",
+            "type": "NORMAL",
+            "links": {
+              "self": [
+                {
+                  "href": "http://localhost:7990/users/user1"
+                }
+              ]
+            }
+          },
+          "role": "REVIEWER",
+          "approved": false,
+          "status": "UNAPPROVED"
+        },
+        {
+          "user": {
+            "name": "user2",
+            "emailAddress": "user.two@kc2005au.com",
+            "id": 3,
+            "displayName": "User Two",
+            "active": true,
+            "slug": "user2",
+            "type": "NORMAL",
+            "links": {
+              "self": [
+                {
+                  "href": "http://localhost:7990/users/user2"
+                }
+              ]
+            }
+          },
+          "role": "REVIEWER",
+          "approved": false,
+          "status": "UNAPPROVED"
+        }
+      ],
+      "participants": [],
+      "properties": {
+        "mergeResult": {
+          "outcome": "CLEAN",
+          "current": true
+        },
+        "resolvedTaskCount": 0,
+        "openTaskCount": 0
+      },
+      "links": {
+        "self": [
+          {
+            "href": "http://localhost:7990/projects/TOOL/repos/git-reader/pull-requests/2"
+          }
+        ]
+      }
+    }
+  ],
+  "start": 0
+}

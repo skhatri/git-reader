@@ -1,0 +1,38 @@
+{
+  "size": 2,
+  "limit": 25,
+  "isLastPage": true,
+  "values": [
+    {
+      "key": "MES",
+      "id": 4,
+      "name": "MESSAGING",
+      "description": "Messaging App",
+      "public": false,
+      "type": "NORMAL",
+      "links": {
+        "self": [
+          {
+            "href": "http://localhost:7990/projects/MES"
+          }
+        ]
+      }
+    },
+    {
+      "key": "TOOL",
+      "id": 2,
+      "name": "TOOLS",
+      "description": "Tools Project",
+      "public": false,
+      "type": "NORMAL",
+      "links": {
+        "self": [
+          {
+            "href": "http://localhost:7990/projects/TOOL"
+          }
+        ]
+      }
+    }
+  ],
+  "start": 0
+}

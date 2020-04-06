@@ -13,3 +13,11 @@
 
 # Dependency directories (remove the comment below to include it)
 # vendor/
+git-reader
+.idea
+.DS_Store
+TODO.md
+coverage.html
+go.sum
+.scannerwork
+vendor
