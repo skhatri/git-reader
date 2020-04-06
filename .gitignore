@@ -20,3 +20,4 @@ TODO.md
 coverage.html
 go.sum
 .scannerwork
+vendor
